@@ -1,15 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        produto p1 = new produto();
-        p1.setNome("Prensado");
-        p1.setPreco(5.00);
-    produto p2 = new produto();
-        p2.setNome("Paiero");
-        p2.setPreco(1.00);
+
+        produto p1 = new produto("Caneta", 2.50);
+        produto p2 = new produto("Caderno", 15.90);
 
         System.out.println(p1);
         System.out.println(p2);
     }
 }
-// a saida dos codigos sai :produto@8efb846
-//produto@2a84aee7 , sendo ilegivel qual os produtos
+
+//a saida ficou produto{nome='Caneta', preco=2,50}
+//produto{nome='Caderno', preco=15,90 , fica legivel mas para mim nao esta bom
