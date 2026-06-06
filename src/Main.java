@@ -8,4 +8,8 @@ public class Main {
         System.out.println(l1.equals(l2)); // ?
     }
 }
-// L1 E L2 SÃO OBJETOS DIFERENTES, MESMO CONTEUDO, POR ISSO O RESULTADO DO == É FALSE, POIS ELE COMPARA AS REFERENCIAS DE MEMORIA, ENQUANTO O EQUALS COMPARA O CONTEUDO DOS OBJETOS, SE O EQUALS NAO FOR SOBRESCRITO NA CLASSE LIVRO, ELE VAI HERDAR O COMPORTAMENTO DA CLASSE OBJECT, QUE TAMBEM COMPARA AS REFERENCIAS DE MEMORIA, ENTÃO O RESULTADO DO EQUALS TAMBEM VAI SER FALSE.
+// O ISBN identifica unicamente um livro.
+// Títulos podem ser iguais para livros diferentes
+// ou podem variar entre edições, idiomas e traduções.
+// Por isso, o ISBN é mais confiável para determinar
+// se dois livros representam a mesma obra.
