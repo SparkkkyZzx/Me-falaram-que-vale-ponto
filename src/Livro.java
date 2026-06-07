@@ -1,5 +1,4 @@
 import java.util.Objects;
-
 public class Livro {
 
     String titulo;
@@ -9,6 +8,7 @@ public class Livro {
         this.titulo = titulo;
         this.isbn = isbn;
     }
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
@@ -17,6 +17,7 @@ public class Livro {
         Livro outro = (Livro) obj;
         return this.isbn.equals(outro.isbn);
     }
+
     @Override
     public int hashCode() {
         return Objects.hash(isbn);
